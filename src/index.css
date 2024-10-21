@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    @apply bg-[#161b3b] bg-no-repeat;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary;
+  }
+  a {
+    @apply text-secondary font-semibold hover:text-accent-primary_hover transition;
+  }
+  .btn {
+    @apply text-lg h-[60px] px-[30px] rounded-full transition text-white;
+  }
+
+  .lead {
+    @apply text-lg text-secondary  font-medium leading-relaxed;
+  }
+}
