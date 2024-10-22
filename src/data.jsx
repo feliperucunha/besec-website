@@ -16,6 +16,9 @@ import logo from "./assets/logo.png";
 //* import React icon
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsChatDotsFill } from "react-icons/bs";
+import * as FaIcons from 'react-icons/fa';
+import * as SiIcons from 'react-icons/si';
+
 export const heroData = {
   title: "Soluções em T.I.",
   subtitle:
@@ -26,9 +29,11 @@ export const heroData = {
 
 export const aboutData = {
   image: about,
-  title: "Find Out A Little More About Us",
+  title: "SOBRE NÓS",
   subtitle:
-    "Owing to this to be Vasukam aims to bring people closer to each other as the company’s name is inspired by the Sanskrit phrase ‘Vasudhaiva Kutumbakam’ meaning ‘The World Is One Family’ Vasukam inspires the creators to see the world differently, discover new interests, express themselves and own their space through the application named Ownsfare And More To Come.",
+    `A BESEC (Be Secure) é uma empresa de soluções integradas de Tecnologia da Informação e Comunicação Empresarial sediada na cidade de Curitiba/PR, com mais de 7 anos de experiência no mercado e uma equipe experiente e capacitada de técnicos e analistas certificados. </br></br>
+    Com um amplo portfólio de serviços, nos dedicamos a otimizar os resultados empresariais a partir da estruturação da rede de TI, com ganhos operacionais, garantia de segurança e prevenção contra falhas e ataques.
+    `,
 };
 
 export const navigationData = [
@@ -51,44 +56,60 @@ export const navigationData = [
 ];
 
 export const featuresData = {
-  title: "Some Services We Offer",
+  title: "Serviços",
   subtitle:
-    "With our apps you can view the route of your Innovative minds and Building better networks, from our local headquarters to the place where you are. Look for the app now!",
+    "",
   list: [
     {
-      image: feature1,
-      imagebg: feature1bg,
-      title: "Payment Done",
-      description: "Pay with a Visa or PayPal card and without much ado",
-      linkText: "Learn more",
-      delay: "400",
+      text: 'Suporte TI',
+      Icon: SiIcons.SiJavascript,
+      doc: 'https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript',
     },
     {
-      image: feature2,
-      imagebg: feature2bg,
-      title: "Find Your Product",
-      description:
-        "It’s not unusual to see people coming to Ownsfare to chat, meet up or even work.",
-      linkText: "Learn more",
-      delay: "400",
+      text: 'Cibersegurança',
+      Icon: SiIcons.SiTypescript,
+      doc: 'https://www.typescriptlang.org/',
     },
     {
-      image: feature3,
-      imagebg: feature3bg,
-      title: "Print Out",
-      description:
-        "Print out service gives you convenience if someday you need print data, just edit it all and just print it.",
-      linkText: "Learn more",
-      delay: "700",
+      text: 'Firewall',
+      Icon: FaIcons.FaReact,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
     },
     {
-      image: feature4,
-      imagebg: feature4bg,
-      title: "Product Received",
-      description: "In our app you can see the delay time of your order...",
-      linkText: "Learn more",
-      delay: "1300",
+      text: 'Telefonia',
+      Icon: SiIcons.SiRedux,
+      doc: 'https://redux.js.org/',
     },
+    {
+      text: 'Conectividade',
+      Icon: SiIcons.SiNextdotjs,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
+    },
+    {
+      text: 'Servidores',
+      Icon: FaIcons.FaEmber,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
+    },
+    {
+      text: 'Antivírus',
+      Icon: SiIcons.SiAntdesign,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
+    },
+    {
+      text: 'Monitoramento',
+      Icon: FaIcons.FaBootstrap,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
+    },
+    {
+      text: 'LGPD',
+      Icon: SiIcons.SiJquery,
+      doc: 'https://pt-br.reactjs.org/docs/getting-started.html',
+    },
+    {
+      text: 'Consultoria',
+      Icon: SiIcons.SiStyledcomponents,
+      doc: 'https://styled-components.com/docs',
+    }
   ],
 };
 
@@ -191,3 +212,11 @@ export const copyrightdata = {
   text: "BESEC, 2024.",
   icon: <BsChatDotsFill />,
 };
+
+const currentYear = new Date().getFullYear()
+
+export const accomplishmentsData = [
+  { number: (currentYear - 2017), text: 'Anos de atuação' },
+  { number: 200, text: 'Clientes satisfeitos', },
+  { number: 120, text: 'Projetos no último ano', },
+];

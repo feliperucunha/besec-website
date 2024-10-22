@@ -27,44 +27,20 @@ const Features = () => {
           </p>
         </div>
         {/* Feature lists */}
-        <div className="grid grid-cols-1 gap-[50px] xl:grid-cols-2 ">
-          {list.map((feature, index) => {
-            //Feature Structure
-            const { image, imagebg, title, description, linkText, delay } =
-              feature;
-            return (
-              <div
-                className="w-full relative max-w-[530px] h-[360px] flex flex-col justify-center items-center xl:flex-row xl:justify-start mx-auto"
-                data-aos="zoom-in"
-                data-aos-delay={delay}
-                data-aos-offset="10"
-                key={index}
-              >
-                {/* Background Image */}
-                <div className="  top-0 right-0 -z-10  absolute xl:flex ">
-                  <img src={imagebg} alt="" />
-                </div>
-                {/* Icon Image */}
-                <div className="max-w-[180px] xl:mr-7 xl:max-w-[230px]">
-                  <img src={image} alt="/" />
-                </div>
-                {/* Text */}
-                <div className="max-w-[220px]">
-                  <h3 className="text-[24px] mb-4">{title}</h3>
-                  <p className=" font-light italic gap-x-2 group">
-                    {description}
-                  </p>
-                  <div className="flex mt-2 items-center gap-x-2 group ">
-                    <a className=" text-primary font-bold" href="">
-                      {linkText}
-                    </a>
-                    <BsArrowRight className="text-xl text-accent-primary  group-hover:ml-[5px] transition-all" />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <ul className={`my-12 flex flex-wrap lg:my-16 md:gap-6 sm:flex-col lg:flex-row sm:my-8 justify-center`}             data-aos="fade-up"
+            data-aos-delay="100">
+          {list.map(({ doc, text, Icon }) => (
+            <a
+              href={doc}
+              target="_blank"
+              rel="noreferrer"
+              className="flex flex-col items-center p-2 text-white text-center transition-all duration-300 ease-in-out gap-2 rounded-lg hover:text-aqua hover:scale-110 w-full sm:w-full md:w-1/2 lg:w-1/6"
+            >
+              <Icon className="text-[60px]" />
+              <p className="text-[20px]">{text}</p>
+            </a>
+          ))}
+        </ul>
       </div>
     </section>
   );

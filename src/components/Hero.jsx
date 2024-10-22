@@ -7,21 +7,21 @@ const Hero = () => {
   //* destruture hero data
   const { title, subtitle, btnText, image } = heroData;
   return (
-    <section className="lg:h-screen py-3">
+    <section className="lg:h-screen py-3 mt-20 md:mt-0">
       <Header />
       <div className=" container mx-auto h-screen relative ">
         <div className=" flex flex-col xl:flex-row items-center  h-full md:py-12">
           {/* Text */}
           <div className=" text-center xl:mt-[-45px]  xl:text-left xl:absolute">
             <h1
-              className="text-[40px] xl:text-[80px] font-bold leading-[1.1] xl:max-w-[700px] mb-6 lg:mb-12 text-[#eef7ff]"
+              className="text-[40px] xl:text-[80px] font-bold leading-[1.1] xl:max-w-[700px] mb-6 lg:mb-12 text-[#eef7ff] uppercase"
               data-aos="fade-down"
               data-aos-delay="400"
             >
               {title}
             </h1>
             <p
-              className="lead mb-6  xl:max-w-[320px] lg:mb-12 text-[#00aff0]"
+              className="lead mb-6  xl:max-w-[600px] lg:mb-12 text-[#00aff0] text-3xl"
               data-aos="fade-down"
               data-aos-delay="500"
             >
