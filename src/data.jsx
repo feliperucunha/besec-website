@@ -1,6 +1,7 @@
 //* import Image
 import heroimage from "./assets/heroimg.png";
 import about from "./assets/about.png";
+import partners from "./assets/partners.png"
 import feature1 from "./assets/feature1.png";
 import feature1bg from "./assets/feature1_bg.png";
 import feature2 from "./assets/feature2.png";
@@ -14,6 +15,8 @@ import avatar2 from "./assets/avatar2.png";
 import avatar3 from "./assets/avatar3.png";
 import logo from "./assets/logo.png";
 import whatsappLogo from "./assets/whatsappLogo.jpg"
+import Partner1 from "./assets/3CX.png"
+
 //* import React icon
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsChatDotsFill } from "react-icons/bs";
@@ -57,7 +60,7 @@ export const navigationData = [
 ];
 
 export const featuresData = {
-  title: "Serviços",
+  title: "SERVIÇOS",
   subtitle:
     "",
   list: [
@@ -228,5 +231,14 @@ export const whatsappData = {
   chatMessage: "Olá, como podemos ajudar?",
   placeholder: "Digite uma mensagem...",
   phoneNumber: "+554134117173",
+  message: 'Olá',
   avatar: whatsappLogo
 }
+
+export const partersData = {
+  image: partners,
+  title: "NOSSOS PARCEIROS",
+  partersLogos: [
+    Partner1
+  ]
+};

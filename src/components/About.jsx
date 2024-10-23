@@ -7,9 +7,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="my-[20px] xl:mt-[100px]"
+      className="my-[20px]"
       data-aos="fade-up"
-      data-aos-offset="350"
+      data-aos-offset="150"
     >
       <div className=" container mx-auto">
         <div

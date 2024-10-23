@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 const CtaSection = () => {
   const { title, subtitle, btnText1, btnText2 } = ctaData;
   return (
-    <section className="my-[75px] xl:my-[150px] border-t-2" data-aos="fade-up">
+    <section className="my-[75px] xl:my-[150px]" data-aos="fade-up">
       <div className=" container  mx-auto">
         <div className="flex flex-col xl:flex-row justify-between items-center ">
           {/* Text */}

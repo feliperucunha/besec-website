@@ -8,15 +8,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../slider.css";
 //import required moduules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 const TestimonialsSlider = () => {
   return (
     <Swiper
-      slidesPerView={"auto"}
+      slidesPerView={"3"}
       centeredSlides={true}
       spaceBetween={20}
+      loop="true"
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{ clickable: true }}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
       className="mySwiper"
     >
       {testimonialsData.map((slide, index) => {
@@ -24,18 +29,18 @@ const TestimonialsSlider = () => {
         return (
           <SwiperSlide
             key={index}
-            className="bg-white rounded-2xl border  h-[330px] border-accent-primary xl:max-w-[600px] pt-[60px] px-[35px] xl:px-[70px] mb-10 pb-[50px] flex items-start  shadow-xl  "
+            className="h-[330px] xl:max-w-[200px] pt-[60px] px-[35px] xl:px-[20px] mb-10 pb-[50px] flex items-start"
           >
             {/*Avatar Image */}
             <img src={image} alt="" />
             {/*Text */}
-            <div className="ml-8">
+            {/* <div className="ml-8">
               <div className="text-lg text-primary font-bold">{name}</div>
               <div className="mb-4 font-semibold text-accent-primary">
                 {web}
               </div>
               <p className="max-w-[350px] text-justify">{message}</p>
-            </div>
+            </div> */}
           </SwiperSlide>
         );
       })}
