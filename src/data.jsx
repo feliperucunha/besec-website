@@ -13,6 +13,7 @@ import avatar1 from "./assets/avatar1.png";
 import avatar2 from "./assets/avatar2.png";
 import avatar3 from "./assets/avatar3.png";
 import logo from "./assets/logo.png";
+import whatsappLogo from "./assets/whatsappLogo.jpg"
 //* import React icon
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsChatDotsFill } from "react-icons/bs";
@@ -220,3 +221,12 @@ export const accomplishmentsData = [
   { number: 200, text: 'Clientes satisfeitos', },
   { number: 120, text: 'Projetos no último ano', },
 ];
+
+export const whatsappData = {
+  accountName: "Suporte BESEC",
+  statusMessage: "Responde em até uma hora",
+  chatMessage: "Olá, como podemos ajudar?",
+  placeholder: "Digite uma mensagem...",
+  phoneNumber: "+554134117173",
+  avatar: whatsappLogo
+}
