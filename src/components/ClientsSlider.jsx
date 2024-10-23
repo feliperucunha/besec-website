@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "../slider.css";
 //import required moduules
 import { Pagination, Autoplay } from "swiper/modules";
-const TestimonialsSlider = () => {
+const ClientsSlider = () => {
   return (
     <Swiper
       slidesPerView={"3"}
@@ -48,4 +48,4 @@ const TestimonialsSlider = () => {
   );
 };
 
-export default TestimonialsSlider;
+export default ClientsSlider;

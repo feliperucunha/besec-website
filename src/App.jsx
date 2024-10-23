@@ -6,11 +6,15 @@ import "aos/dist/aos.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
-import Testimonials from "./components/Testimonials";
+import Clients from "./components/Clients";
 import CtaSection from "./components/CtaSection";
 import Partners from "./components/Partners";
 import Footer from "./components/Footer";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import TalkToUsForm from "./components/TalkToUsForm";
+import InstagramPublications from "./components/InstagramPublications";
+import Testimonials from "./components/Testimonials";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Cookie from "./components/Cookie";
 import { whatsappData } from "./data";
 
 function App() {
@@ -19,10 +23,22 @@ function App() {
     duration: 1800,
     offset: 0,
   });
-  const { accountName, statusMessage, chatMessage, phoneNumber, placeholder, avatar, message } = whatsappData
+  const {
+    accountName,
+    statusMessage,
+    chatMessage,
+    phoneNumber,
+    placeholder,
+    avatar,
+    message,
+  } = whatsappData;
   return (
     <div className=" overflow-hidden">
-      <a href={`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`} target="_blank">
+      <Cookie />
+      <a
+        href={`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`}
+        target="_blank"
+      >
         <FloatingWhatsApp
           accountName={accountName}
           statusMessage={statusMessage}
@@ -31,15 +47,18 @@ function App() {
           phoneNumber={phoneNumber}
           avatar={avatar}
           // Remove the line below to see the text box
-          chatboxHeight='0'
+          chatboxHeight="0"
         />
       </a>
       <Hero />
       <About />
       <Features />
       <Partners />
+      <Clients />
+      <InstagramPublications />
       <Testimonials />
-      <CtaSection />
+      <TalkToUsForm />
+      {/* <CtaSection /> */}
       <Footer />
     </div>
   );

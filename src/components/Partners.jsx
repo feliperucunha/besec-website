@@ -30,15 +30,15 @@ const Partners = () => {
             >
               {title}
             </h2>
-            <div className="xl:pr-12 border-[#00aff0] border-2 px-3 py-5">
-            <div>
+            <div className="border-[#00aff0] border-2 grid gap-px grid-cols-3 p-4">
               {partersLogos.map((partner) => {
                 return (
-                  <img src={partner} className="max-w-[100px]" />
+                  <div className="flex items-center justify-center">
+                    <img src={partner} className="max-w-[100px] " />
+                  </div>
                 )
               })}
             </div>
-          </div>
           </div>
         </div>
       </div>
