@@ -1,6 +1,8 @@
 import React from "react";
 //import about data
 import { formData } from "../data";
+import emailjs from "emailjs-com";
+import { useEffect } from "react";
 const TalkToUsForm = () => {
   //About data Content
   const {
@@ -16,6 +18,7 @@ const TalkToUsForm = () => {
   const [phone, setPhone] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [buttonLoading, setButtonLoading] = React.useState(false);
+  const [buttonText, setButtonText] = React.useState("Enviar Mensagem");
 
   const nameHandler = (e) => setName(e.target.value);
   const emailHandler = (e) => setEmail(e.target.value);
@@ -24,24 +27,42 @@ const TalkToUsForm = () => {
 
   // const navigate = useNavigate();
 
+  useEffect(() => {
+    if (buttonText === "Enviado!" || buttonText === "Falha no Envio!") {
+      setTimeout(function () {
+        setButtonText("Enviar Mensagem");
+      }, 2000);
+    }
+  }, [buttonText]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonLoading(true);
-    const response = await fetch("https://formspree.io/f/<your-form-id>", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, phone, message }),
-    });
+    setButtonText("Enviando");
 
-    if (response.ok) {
-      // navigate("/success");
-      setButtonLoading(false);
-    } else {
-      alert("Failed to submit form");
-      setButtonLoading(false);
-    }
+    const templateParams = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+    emailjs
+      .send(
+        "service_smcvuxr",
+        "template_cg3tfgk",
+        templateParams,
+        "WBxSfk0KmotE8sAva"
+      )
+      .then((response) => {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setButtonText("Enviado!");
+      })
+      .catch((error) => {
+        console.error(error);
+        setButtonText("Falha no Envio!");
+      });
   };
   return (
     <section
@@ -114,39 +135,60 @@ const TalkToUsForm = () => {
         </div>
         <form className="relative p-2 pb-[100px]" onSubmit={handleSubmit}>
           <div className="border-2 border-transparent w-[90%] flex flex-col pl-2">
-            <label className="mb-1">Nome</label>
-            <input
-              type="text"
-              required
-              placeholder="João da Silva"
-              value={name}
-              onChange={nameHandler}
-              className="text-[#333] w-full text-[15px] py-2 border-b-[1px] border-b-[rgb(100,21,173)] outline-none"
-            />
+            <div class="relative">
+              <input
+                type="text"
+                id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-black bg-transparent rounded-lg border border-black appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                value={name}
+                onChange={nameHandler}
+              />
+              <label
+                for="floating_outlined"
+                class="absolute text-sm text-black dark:text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Nome
+              </label>
+            </div>
           </div>
 
           <div className="border-2 border-transparent w-[90%] flex flex-col pl-2 mt-4">
-            <label className="mb-1">Telefone</label>
-            <input
-              type="tel"
-              required
-              placeholder="(41) 93333-3333"
-              value={phone}
-              onChange={phoneHandler}
-              className="text-[#333] w-full text-[15px] py-2 border-b-[1px] border-b-[rgb(100,21,173)] outline-none"
-            />
+            <div class="relative">
+              <input
+                type="text"
+                id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-black bg-transparent rounded-lg border border-black appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                value={phone}
+                onChange={phoneHandler}
+              />
+              <label
+                for="floating_outlined"
+                class="absolute text-sm text-black dark:text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Telefone
+              </label>
+            </div>
           </div>
 
           <div className="border-2 border-transparent w-[90%] flex flex-col pl-2 mt-4">
-            <label className="mb-1">Email</label>
-            <input
-              type="email"
-              required
-              placeholder="teste@gmail.com"
-              value={email}
-              onChange={emailHandler}
-              className="text-[#333] w-full text-[15px] py-2 border-b-[1px] border-b-[rgb(100,21,173)] outline-none"
-            />
+            <div class="relative">
+              <input
+                type="text"
+                id="floating_outlined"
+                class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-black bg-white rounded-lg border border-black appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                value={email}
+                onChange={emailHandler}
+              />
+              <label
+                for="floating_outlined"
+                class="absolute text-sm text-black dark:text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Email
+              </label>
+            </div>
           </div>
 
           <div className="border-2 border-transparent w-[90%] flex flex-col pl-2 mt-4">
@@ -163,11 +205,11 @@ const TalkToUsForm = () => {
           <button
             type="submit"
             className={`absolute bottom-5 right-5 py-2 px-6 bg-[#08083f] text-white rounded-[5px] cursor-pointer ${
-              buttonLoading ? "opacity-50 cursor-not-allowed" : ""
+              buttonText === "Enviando" ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={buttonLoading}
           >
-            {buttonLoading ? "Carregando..." : "Enviar Mensagem"}
+            {buttonText}
           </button>
         </form>
       </div>

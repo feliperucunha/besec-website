@@ -23,7 +23,7 @@ const Navbar = () => {
             return (
               <li key={index}>
                 <a
-                  className="hover:text-primary transition-all text-[#00aff0]"
+                  className="hover:text-primary transition-all text-[#00aff0] cursor-pointer"
                   onClick={(e) => handleScroll(e, item.href)}
                 >
                   {item.name}
