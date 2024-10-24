@@ -6,7 +6,7 @@ const About = () => {
   const { image, title, subtitle } = aboutData;
   return (
     <section
-      id="about"
+      id="aboutus"
       className="my-[20px]"
       data-aos="fade-up"
       data-aos-offset="150"
@@ -34,25 +34,31 @@ const About = () => {
               className="max-w-[474px] mx-auto xl:mx-0 text-justify text-white"
               data-aos="fade-up"
               data-aos-delay="300"
-              dangerouslySetInnerHTML={{__html: subtitle}}
+              dangerouslySetInnerHTML={{ __html: subtitle }}
             />
           </div>
         </div>
       </div>
 
-      <div className="w-full flex flex-wrap justify-center gap-6 my-6 md:gap-20 md:my-5 sm:mx-auto"             data-aos="fade-down"
-            data-aos-delay="100">
-          {accomplishmentsData.map((card, index) => (
-            <div key={index} className="bg-[#212D45] rounded-lg h-[55px] p-6 transition-transform duration-400 hover:scale-105 md:h-[135px] md:p-4 lg:h-[100px] sm:h-[50px] sm:p-3 flex-shrink-0 w-[240px] flex justify-center items-center">
-              <h5 className="font-semibold text-[36px] leading-[40px] text-white mb-2 md:text-[28px] md:leading-[32px] sm:text-[24px] sm:leading-[26px]">
-                {`+${card.number}`}
-              </h5>
-              <p className="font-normal text-[18px] leading-[24px] text-white/75 md:text-[16px] md:leading-[20px] sm:text-[10px] sm:leading-[14px] ml-2">
-                {card.text}
-              </p>
-            </div>
-          ))}
-        </div>
+      <div
+        className="w-full flex flex-wrap justify-center gap-6 my-6 md:gap-20 md:my-5 sm:mx-auto"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        {accomplishmentsData.map((card, index) => (
+          <div
+            key={index}
+            className="bg-[#212D45] rounded-lg h-[55px] p-6 transition-transform duration-400 hover:scale-105 md:h-[135px] md:p-4 lg:h-[100px] sm:h-[50px] sm:p-3 flex-shrink-0 w-[240px] flex justify-center items-center"
+          >
+            <h5 className="font-semibold text-[36px] leading-[40px] text-white mb-2 md:text-[28px] md:leading-[32px] sm:text-[24px] sm:leading-[26px]">
+              {`+${card.number}`}
+            </h5>
+            <p className="font-normal text-[18px] leading-[24px] text-white/75 md:text-[16px] md:leading-[20px] sm:text-[10px] sm:leading-[14px] ml-2">
+              {card.text}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

@@ -11,7 +11,10 @@ const Footer = () => {
         <div className="flex flex-col xl:flex-row text-center xl:text-left gap-y-12">
           <div className="w-[45%] mx-auto flec flex-col items-center xl:items-start ">
             {/* logo */}
-            <a href="#">
+            <a
+              href="#"
+              className="flex items-center justify-center xl:justify-start"
+            >
               <img className="mb-[65px] max-w-[300px]" src={logo} alt="" />
             </a>
             {/*address*/}

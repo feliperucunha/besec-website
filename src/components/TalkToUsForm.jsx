@@ -45,7 +45,7 @@ const TalkToUsForm = () => {
   };
   return (
     <section
-      id="about"
+      id="contact"
       className="my-[20px] flex justify-center items-center py-20"
       data-aos="fade-up"
       data-aos-offset="150"

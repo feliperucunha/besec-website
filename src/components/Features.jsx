@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 const { title, subtitle, list } = featuresData;
 const Features = () => {
   return (
-    <section className="my-[70px] xl:my-[150px] pb-20 border-b-2">
+    <section className="my-[70px] xl:my-[150px] pb-20 border-b-2" id="solution">
       <div className=" container mx-auto">
         {/* Text */}
         <div className="text-center">
@@ -27,8 +27,11 @@ const Features = () => {
           </p>
         </div>
         {/* Feature lists */}
-        <ul className={`my-12 flex flex-wrap lg:my-16 md:gap-6 sm:flex-col lg:flex-row sm:my-8 justify-center`}             data-aos="fade-up"
-            data-aos-delay="100">
+        <ul
+          className={`my-12 flex flex-wrap lg:my-16 md:gap-6 sm:flex-col lg:flex-row sm:my-8 justify-center`}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           {list.map(({ doc, text, Icon }) => (
             <a
               href={doc}

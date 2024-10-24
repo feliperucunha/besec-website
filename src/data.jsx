@@ -50,19 +50,19 @@ export const aboutData = {
 export const navigationData = [
   {
     name: "Home",
-    href: "#",
+    href: "",
   },
   {
     name: "Sobre Nós",
-    href: "#aboutus",
+    href: "aboutus",
   },
   {
     name: "Soluções",
-    href: "#solution",
+    href: "solution",
   },
   {
     name: "Contato",
-    href: "#contact",
+    href: "contact",
   },
 ];
 
@@ -169,37 +169,37 @@ export const footerData = {
     },
     {
       name: "Features",
-      href: "#features",
+      href: "features",
     },
     {
       name: "Careers",
-      href: "#careers",
+      href: "careers",
     },
     {
       name: "DW News",
-      href: "#dWNews",
+      href: "dWNews",
     },
   ],
   list2: [
     {
       name: "Support",
-      href: "#support",
+      href: "support",
     },
     {
       name: "Sign Up",
-      href: "#signUp",
+      href: "signUp",
     },
     {
       name: "Guide",
-      href: "#guide",
+      href: "guide",
     },
     {
       name: "Reports",
-      href: "#reports",
+      href: "reports",
     },
     {
       name: "Q & A",
-      href: "#q",
+      href: "q",
     },
   ],
   sociallist: [
