@@ -2,19 +2,13 @@
 import heroimage from "./assets/heroimg.png";
 import about from "./assets/about.png";
 import partners from "./assets/partners.png";
-import feature1 from "./assets/feature1.png";
-import feature1bg from "./assets/feature1_bg.png";
-import feature2 from "./assets/feature2.png";
-import feature2bg from "./assets/feature2_bg.png";
-import feature3 from "./assets/feature3.png";
-import feature3bg from "./assets/feature3_bg.png";
-import feature4 from "./assets/feature4.png";
-import feature4bg from "./assets/feature4_bg.png";
 import avatar1 from "./assets/avatar1.png";
 import avatar2 from "./assets/avatar2.png";
 import avatar3 from "./assets/avatar3.png";
 import logo from "./assets/logo.png";
 import whatsappLogo from "./assets/whatsappLogo.jpg";
+
+// Partners
 import Partner1 from "./assets/3CX.png";
 import Partner2 from "./assets/Cisco.png";
 import Partner3 from "./assets/Dell.png";
@@ -25,12 +19,29 @@ import Partner7 from "./assets/Skaymail.png";
 import Partner8 from "./assets/Veeam.png";
 import Partner9 from "./assets/Wispot.png";
 
+// Clients 
+import Client1 from "./assets/Amplação.png";
+import Client2 from "./assets/Amunhoz.png";
+import Client3 from "./assets/Cmunhoz.png";
+import Client4 from "./assets/CREF.png";
+import Client5 from "./assets/CRMV.png";
+import Client6 from "./assets/Imperial.png";
+import Client7 from "./assets/Itaeté.png";
+import Client8 from "./assets/LogPiso.png";
+import Client9 from "./assets/Monteviza.png";
+import Client10 from "./assets/Moore.png";
+import Client11 from "./assets/Novo Nordisk 2.png";
+import Client12 from "./assets/Novo Nordisk.png";
+import Client13 from "./assets/Softpay.png";
+import Client14 from "./assets/Vetorlog.png";
+import Client15 from "./assets/We Talk.png";
+
+
 //* import React icon
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsChatDotsFill } from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import * as Fa6Icons from "react-icons/fa6";
-import * as SiIcons from "react-icons/si";
 import * as TfiIcons from "react-icons/tfi";
 import * as CiIcons from "react-icons/ci";
 import * as ImIcons from "react-icons/im";
@@ -130,9 +141,9 @@ export const featuresData = {
   ],
 };
 
-export const testimonialsData = [
+export const clientsData = [
   {
-    image: avatar1,
+    image: Client1,
     name: "Serena",
     web: "rena.com",
     message:
@@ -140,7 +151,7 @@ export const testimonialsData = [
     delay: "300",
   },
   {
-    image: avatar2,
+    image: Client2,
     name: "Natalia",
     web: "natalia.com",
     message:
@@ -148,7 +159,103 @@ export const testimonialsData = [
     delay: "600",
   },
   {
-    image: avatar3,
+    image: Client3,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client4,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client5,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client6,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client7,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client8,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client9,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client10,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client11,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client12,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client13,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client14,
+    name: "Vebin",
+    web: "Vebin.com",
+    message:
+      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+    delay: "900",
+  },
+  {
+    image: Client15,
     name: "Vebin",
     web: "Vebin.com",
     message:
@@ -248,7 +355,7 @@ export const whatsappData = {
   avatar: whatsappLogo,
 };
 
-export const partersData = {
+export const partnersData = {
   image: partners,
   title: "NOSSOS PARCEIROS",
   partersLogos: [

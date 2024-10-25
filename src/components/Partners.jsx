@@ -1,9 +1,9 @@
 import React from "react";
 //import about data
-import { partersData } from "../data";
+import { partnersData } from "../data";
 const Partners = () => {
   //About data Content
-  const { image, title, partersLogos } = partersData;
+  const { image, title, partersLogos } = partnersData;
   return (
     <section
       id="about"

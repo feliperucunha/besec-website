@@ -75,7 +75,7 @@ const TalkToUsForm = () => {
       data-aos="fade-up"
       data-aos-offset="150"
     >
-      <div className="w-[90%] md:w-full md:min-w-[600px] grid grid-cols-1.5fr gap-2 bg-white p-1 rounded-md h-auto md:grid-cols-2 md:w-[90%] md:max-w-full md:min-w-0 md:gap-0">
+      <div className="w-[90%] md:w-[85%] md:min-w-[600px] grid grid-cols-1.5fr gap-2 bg-white p-1 rounded-md h-auto md:grid-cols-2 md:w-[90%] md:max-w-full md:min-w-0 md:gap-0">
         <div className="bg-[#08083f] rounded-[7px] relative p-[30px] flex flex-col items-center h-auto pb-[100px] md:pb-[80px] pt-2">
           <div className="flex flex-col items-center">
             <p className="text-center text-white md:text-[48px] font-bold text-[30px]">
