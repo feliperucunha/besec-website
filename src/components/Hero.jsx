@@ -1,6 +1,7 @@
 import React from "react";
 //*import hero data
 import { heroData } from "../data.jsx";
+import desktopHeroImg from '../assets/desktopheroimg.png'
 //* import Components
 import Header from "./Header.jsx";
 const Hero = () => {
@@ -37,11 +38,18 @@ const Hero = () => {
           </div>
           {/* image */}
           <div
-            className="xl:absolute xl:-right-12 xl:bottom-17 relative p-14 md:p-0"
+            className="relative p-14 md:hidden"
             data-aos="fade-up"
             data-aos-delay="700"
           >
             <img src={image} alt="/" />
+          </div>
+          <div
+            className="relative hidden md:block"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <img src={desktopHeroImg} alt="/" />
           </div>
         </div>
       </div>
