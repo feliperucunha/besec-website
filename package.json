@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^4.11.0",
+    "react-social-media-embed": "^2.5.17",
     "swiper": "^11.0.4"
   },
   "devDependencies": {

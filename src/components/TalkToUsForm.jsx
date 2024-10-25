@@ -93,7 +93,7 @@ const TalkToUsForm = () => {
             >
               
               <FiPhone className="w-6 h-6 fill-white" />
-              <div className="text-white text-[15px] ml-[10px]">
+              <div className="text-white text-[20px] ml-[10px]">
                 {phoneNumber}
               </div>
             </a>
@@ -102,26 +102,26 @@ const TalkToUsForm = () => {
               className="flex w-[200px] mt-[10px] cursor-pointer no-underline"
             >
               <FaWhatsapp className="w-6 h-6 fill-white" />
-              <div className="text-white text-[15px] ml-[10px]">
+              <div className="text-white text-[20px] ml-[10px]">
                 {whatsappNumber}
               </div>
             </a>
 
             <a
               href="mailto:aljay3334@gmail.com"
-              className="flex w-[200px] mt-[10px] cursor-pointer no-underline"
+              className="flex w-[250px] mt-[10px] cursor-pointer no-underline"
             >
               
               <MdOutlineMailOutline className="w-6 h-6 fill-white" />
-              <div className="text-white text-[15px] ml-[10px]">{emailData}</div>
+              <div className="text-white text-[20px] ml-[10px]">{emailData}</div>
             </a>
 
             <div className="flex pt-2">
             <TfiLocationPin className="w-6 h-6 fill-white" />
-            <div className="text-white text-[15px] ml-[10px]">{address}</div>
+            <div className="text-white text-[20px] ml-[10px]">{address}</div>
             </div>
 
-            <div className="text-white text-[15px] ml-[35px]">
+            <div className="text-white text-[20px] ml-[35px]">
               {addressCity}
             </div>
           </div>

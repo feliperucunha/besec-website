@@ -1,6 +1,7 @@
 import React from "react";
 //import about data
 import { instagramData } from "../data";
+import { InstagramEmbed } from 'react-social-media-embed';
 const InstagramPublications = () => {
   //About data Content
   const { title, subtitle } = instagramData;
@@ -14,8 +15,8 @@ const InstagramPublications = () => {
       <div className="container mx-auto">
         {/* Text */}
 
-        <div className="border-[#00aff0] border-2 p-4 w-full text-center flex items-center justify-center">
-          <div className="text-center">
+        <div className="border-[#00aff0] border-2 py-4 w-full ">
+          <div className="text-center text-center flex items-center justify-center flex-col">
             <h2
               className="text-[40px] font-bold leading-tight mb-4"
               data-aos="fade-down"
@@ -31,6 +32,28 @@ const InstagramPublications = () => {
               {subtitle}
             </p>
           </div>
+
+          <div className="grid gap-4 px-4 md:grid-cols-3">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
+            </div>
+          </div>
+
 
           {/* insert instagram grid here */}
         </div>
