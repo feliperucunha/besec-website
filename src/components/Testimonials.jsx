@@ -14,8 +14,8 @@ const Testimonials = () => {
       <div className=" container mx-auto">
         <div
           className="  rounded-[50px]
-         min-h-[560px] px-12 pb-12 flex flex-col text-center xl:flex-row 
-         xl:items-center xl:text-left xl:gap-x-[60px] xl:pb-0  "
+         min-h-[560px] px-12 pb-12 flex flex-col text-center
+         xl:items-center xl:pb-0  "
         >
           {/* Text Section */}
           <div className="flex-1">
@@ -26,14 +26,13 @@ const Testimonials = () => {
             >
               {testimonials.title}
             </h2>
-            <div className="border-[#00aff0] border-2 grid gap-px grid-cols-3 p-10">
-              {partersLogos.map((partner) => {
+            <div className="border-[#00aff0] border-2 grid gap-2 p-4 md:p-10 md:grid-cols-3">
+              {partersLogos.map((partner, index) => {
                 return (
-                  <div className="flex items-center justify-center p-4">
-                    <img src={partner} className="max-w-[100px] rounded mr-4" />
-                    <span className="text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate deleniti distinctio assumenda blanditiis.
+                  <div key={index} className="flex md:flex-row flex-col items-center justify-center p-4">
+                    <img src={partner} className="max-w-[80px] md:max-w-[100px] rounded mb-2" />
+                    <span className="text-white text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti distinctio assumenda blanditiis.
                     </span>
                   </div>
                 );

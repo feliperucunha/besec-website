@@ -3,6 +3,10 @@ import React from "react";
 import { formData } from "../data";
 import emailjs from "emailjs-com";
 import { useEffect } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { TfiLocationPin } from "react-icons/tfi";
 const TalkToUsForm = () => {
   //About data Content
   const {
@@ -71,10 +75,10 @@ const TalkToUsForm = () => {
       data-aos="fade-up"
       data-aos-offset="150"
     >
-      <div className="w-full min-w-[600px] grid grid-cols-1.5fr gap-2 bg-white p-1 rounded-md h-auto md:grid-cols-2 md:w-[90%] md:max-w-full md:min-w-0 md:gap-0">
-        <div className="bg-[#08083f] rounded-[7px] relative p-[30px] flex flex-col items-center h-auto pb-[100px] md:pb-[80px]">
+      <div className="w-[90%] md:w-full md:min-w-[600px] grid grid-cols-1.5fr gap-2 bg-white p-1 rounded-md h-auto md:grid-cols-2 md:w-[90%] md:max-w-full md:min-w-0 md:gap-0">
+        <div className="bg-[#08083f] rounded-[7px] relative p-[30px] flex flex-col items-center h-auto pb-[100px] md:pb-[80px] pt-2">
           <div className="flex flex-col items-center">
-            <p className="text-center text-white text-[18px] font-bold">
+            <p className="text-center text-white md:text-[48px] font-bold text-[30px]">
               {title}
             </p>
             {/* <p className="text-center text-white text-[12px] leading-[18px]">
@@ -87,9 +91,19 @@ const TalkToUsForm = () => {
               href="tel:+233543201893"
               className="flex w-[200px] mt-[50px] cursor-pointer no-underline"
             >
-              {/* <Icon.Phone size={15} color="rgb(252, 113, 137)" /> */}
+              
+              <FiPhone className="w-6 h-6 fill-white" />
               <div className="text-white text-[15px] ml-[10px]">
                 {phoneNumber}
+              </div>
+            </a>
+            <a
+              href="tel:+233543201893"
+              className="flex w-[200px] mt-[10px] cursor-pointer no-underline"
+            >
+              <FaWhatsapp className="w-6 h-6 fill-white" />
+              <div className="text-white text-[15px] ml-[10px]">
+                {whatsappNumber}
               </div>
             </a>
 
@@ -97,40 +111,19 @@ const TalkToUsForm = () => {
               href="mailto:aljay3334@gmail.com"
               className="flex w-[200px] mt-[10px] cursor-pointer no-underline"
             >
-              {/* <Icon.Mail size={15} color="rgb(252, 113, 137)" /> */}
+              
+              <MdOutlineMailOutline className="w-6 h-6 fill-white" />
+              <div className="text-white text-[15px] ml-[10px]">{emailData}</div>
             </a>
-            <div className="text-white text-[15px] ml-[10px]">{emailData}</div>
 
+            <div className="flex pt-2">
+            <TfiLocationPin className="w-6 h-6 fill-white" />
             <div className="text-white text-[15px] ml-[10px]">{address}</div>
-            <div className="text-white text-[15px] ml-[10px]">
+            </div>
+
+            <div className="text-white text-[15px] ml-[35px]">
               {addressCity}
             </div>
-          </div>
-
-          <div className="relative mt-[30px]">
-            <div className="h-[50px] w-[50px] bg-[rgb(100,21,173)] rounded-full z-20"></div>
-            <div className="absolute left-[10px] bg-[rgb(252,113,137)] rounded-full h-[30px] w-[30px]"></div>
-          </div>
-
-          <div className="flex justify-center absolute bottom-[30px] cursor-pointer">
-            <a
-              href="https://www.facebook.com/profile.php?id=100021937291259"
-              className="w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-[rgb(252,113,137)]"
-            >
-              {/* <Icon.Facebook color="#fff" size={20} /> */}
-            </a>
-            <a
-              href="https://www.instagram.com/_allenjones/"
-              className="w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-[rgb(252,113,137)] ml-[10px]"
-            >
-              {/* <Icon.Instagram color="#fff" size={20} /> */}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/allen-jones-b799b7171/"
-              className="w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-[rgb(252,113,137)] ml-[10px]"
-            >
-              {/* <Icon.Linkedin color="#fff" size={20} /> */}
-            </a>
           </div>
         </div>
         <form className="relative p-2 pb-[100px]" onSubmit={handleSubmit}>

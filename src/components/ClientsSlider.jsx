@@ -29,7 +29,7 @@ const ClientsSlider = () => {
         return (
           <SwiperSlide
             key={index}
-            className="h-[330px] xl:max-w-[200px] pt-[60px] px-[35px] xl:px-[20px] mb-10 pb-[50px] flex items-start"
+            className="h-[330px] max-w-[120px] xl:max-w-[200px] pt-[60px] xl:px-[35px] xl:px-[20px] md:mb-10 pb-[50px] flex items-start"
           >
             {/*Avatar Image */}
             <img src={image} alt="" />

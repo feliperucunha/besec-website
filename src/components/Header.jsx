@@ -41,7 +41,7 @@ const Header = () => {
           <div className="flex items-center gap-x-[120px]">
             {/* logo */}
             <a href="#">
-              <img src={isAtTop ? logo : darkLogo} alt="/" className="max-h-12" />
+              <img src={isAtTop ? logo : darkLogo} alt="/" className="md:max-h-12 max-h-8" />
             </a>
             {/* nav initially hidden - only show on large screen  */}
             <div className=" hidden lg:flex">
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
 
           {/* Button */}
-          <button className="btn flex items-center justify-center gap-x-[20px] group hover:text-white shadow-lg px-8 bg-[#00aff0] text-base font-bold text-primary  hover:bg-accent-primary">
+          <button className="btn flex items-center h-10 md:h-12 justify-center gap-x-[20px] group hover:text-white shadow-lg px-6 bg-[#00aff0] text-base font-bold text-primary  hover:bg-accent-primary">
             <span className="text-[#eef7ff]">Área do cliente</span>
           </button>
 

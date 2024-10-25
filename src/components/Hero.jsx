@@ -7,7 +7,7 @@ const Hero = () => {
   //* destruture hero data
   const { title, subtitle, btnText, image } = heroData;
   return (
-    <section className="lg:h-screen py-3 mt-20 md:mt-0">
+    <section className="lg:h-screen py-3 mt-20 md:mt-0 h-[70vh]">
       <Header />
       <div className=" container mx-auto h-screen relative ">
         <div className=" flex flex-col xl:flex-row items-center  h-full md:py-12">
@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
           {/* image */}
           <div
-            className="xl:absolute xl:-right-12 xl:bottom-17"
+            className="xl:absolute xl:-right-12 xl:bottom-17 relative "
             data-aos="fade-up"
             data-aos-delay="700"
           >

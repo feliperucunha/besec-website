@@ -34,7 +34,7 @@ const Partners = () => {
               {partersLogos.map((partner) => {
                 return (
                   <div className="flex items-center justify-center">
-                    <img src={partner} className="max-w-[100px] " />
+                    <img src={partner} className="md:max-w-[100px] " />
                   </div>
                 )
               })}

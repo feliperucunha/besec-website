@@ -29,7 +29,14 @@ import Partner9 from "./assets/Wispot.png";
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { BsChatDotsFill } from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
+import * as Fa6Icons from "react-icons/fa6";
 import * as SiIcons from "react-icons/si";
+import * as TfiIcons from "react-icons/tfi";
+import * as CiIcons from "react-icons/ci";
+import * as ImIcons from "react-icons/im";
+import * as MdIcons from "react-icons/md";
+import * as BiIcons from "react-icons/bi";
+import * as PiIcons from "react-icons/pi";
 
 export const heroData = {
   title: "Soluções em T.I.",
@@ -72,52 +79,52 @@ export const featuresData = {
   list: [
     {
       text: "Suporte TI",
-      Icon: SiIcons.SiJavascript,
+      Icon: TfiIcons.TfiHeadphoneAlt,
       doc: "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
     },
     {
       text: "Cibersegurança",
-      Icon: SiIcons.SiTypescript,
+      Icon: CiIcons.CiLock,
       doc: "https://www.typescriptlang.org/",
     },
     {
       text: "Firewall",
-      Icon: FaIcons.FaReact,
+      Icon: ImIcons.ImFire,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "Telefonia",
-      Icon: SiIcons.SiRedux,
+      Icon: MdIcons.MdOutlinePhoneInTalk,
       doc: "https://redux.js.org/",
     },
     {
       text: "Conectividade",
-      Icon: SiIcons.SiNextdotjs,
+      Icon: FaIcons.FaWifi,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "Servidores",
-      Icon: FaIcons.FaEmber,
+      Icon: BiIcons.BiServer,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "Antivírus",
-      Icon: SiIcons.SiAntdesign,
+      Icon: FaIcons.FaVirusSlash,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "Monitoramento",
-      Icon: FaIcons.FaBootstrap,
+      Icon: Fa6Icons.FaMagnifyingGlass,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "LGPD",
-      Icon: SiIcons.SiJquery,
+      Icon: PiIcons.PiGavelFill,
       doc: "https://pt-br.reactjs.org/docs/getting-started.html",
     },
     {
       text: "Consultoria",
-      Icon: SiIcons.SiStyledcomponents,
+      Icon: Fa6Icons.FaUserGear,
       doc: "https://styled-components.com/docs",
     },
   ],
