@@ -1,6 +1,7 @@
 import React from "react";
 //import about data
 import { aboutData, accomplishmentsData } from "../data";
+import { AnimatedCounter } from "./AnimatedCounter";
 const About = () => {
   //About data Content
   const { image, title, subtitle } = aboutData;
@@ -46,17 +47,11 @@ const About = () => {
         data-aos-delay="100"
       >
         {accomplishmentsData.map((card, index) => (
-          <div
-            key={index}
-            className="bg-[#212D45] rounded-lg h-[55px] p-6 transition-transform duration-400 hover:scale-105 md:h-[135px] md:p-4 lg:h-[100px] sm:h-[50px] sm:p-3 flex-shrink-0 w-[240px] flex justify-center items-center"
-          >
-            <h5 className="font-semibold text-[36px] leading-[40px] text-white mb-2 md:text-[28px] md:leading-[32px] sm:text-[24px] sm:leading-[26px]">
-              {`+${card.number}`}
-            </h5>
-            <p className="font-normal text-[18px] leading-[24px] text-white/75 md:text-[16px] md:leading-[20px] sm:text-[10px] sm:leading-[14px] ml-2">
-              {card.text}
-            </p>
-          </div>
+          <AnimatedCounter
+          key={index}
+          number={card.number}
+          text={card.text}
+        />
         ))}
       </div>
     </section>

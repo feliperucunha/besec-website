@@ -2,9 +2,12 @@ import React from "react";
 //import about data
 import { instagramData } from "../data";
 import { InstagramEmbed } from 'react-social-media-embed';
+import { useIsMobile } from '../hooks/useIsMobile';
 const InstagramPublications = () => {
   //About data Content
   const { title, subtitle } = instagramData;
+  const isMobile = useIsMobile();
+  const igPublications = isMobile ? instagramData.publications.slice(0,1) : instagramData.publications
   return (
     <section
       id="about"
@@ -16,7 +19,7 @@ const InstagramPublications = () => {
         {/* Text */}
 
         <div className="border-[#00aff0] border-2 py-4 w-full ">
-          <div className="text-center text-center flex items-center justify-center flex-col">
+          <div className="text-center flex items-center justify-center flex-col">
             <h2
               className="text-[40px] font-bold leading-tight mb-4"
               data-aos="fade-down"
@@ -34,28 +37,14 @@ const InstagramPublications = () => {
           </div>
 
           <div className="grid gap-4 px-4 md:grid-cols-3">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <InstagramEmbed  url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} height={380} />
-            </div>
+            {igPublications.map((item) => {
+              return (
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <InstagramEmbed  url={item} width={328} height={380} />
+                </div>
+              )
+            })}
           </div>
-
-
-          {/* insert instagram grid here */}
         </div>
       </div>
     </section>

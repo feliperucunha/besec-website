@@ -18,9 +18,9 @@ const Footer = () => {
               <img className="mb-[65px] max-w-[300px]" src={logo} alt="" />
             </a>
             {/*address*/}
-            <div className="max-w-[260px] mb-5 text-primary font-bold">
+            {/* <div className="max-w-[260px] mb-5 text-white font-bold">
               {address}
-            </div>
+            </div> */}
             {/*email*/}
             <div className=" font-light italic text-white">{email}</div>
             {/*Phone*/}
@@ -31,14 +31,14 @@ const Footer = () => {
           <div className="flex flex-1 flex-col gap-y-14 xl:flex-row justify-between">
             {/* List1 */}
             <div>
-              <div className=" font-extrabold text-primary mb-8 text-white">
+              <div className=" font-extrabold mb-8 text-white">
                 Sobre
               </div>
               <ul className="flex flex-col gap-y-4">
                 {list1.map((item, index) => {
                   return (
                     <li key={index}>
-                      <a className=" text-primary  text-white" href={item.href}>
+                      <a className=" text-white" href={item.href}>
                         {item.name}
                       </a>
                     </li>
@@ -48,14 +48,14 @@ const Footer = () => {
             </div>
             {/* List2 */}
             <div>
-              <div className=" font-extrabold text-primary mb-8 text-white">
+              <div className=" font-extrabold  mb-8 text-white">
                 Ajuda
               </div>
               <ul className="flex flex-col gap-y-4">
                 {list2.map((item, index) => {
                   return (
                     <li key={index}>
-                      <a className=" text-primary text-white" href={item.href}>
+                      <a className="  text-white" href={item.href}>
                         {item.name}
                       </a>
                     </li>

@@ -7,6 +7,19 @@ import Header from "./Header.jsx";
 const Hero = () => {
   //* destruture hero data
   const { title, subtitle, btnText, image } = heroData;
+  const handleScroll = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (!targetElement) return window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.scrollY - 100;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="lg:h-screen py-3 mt-20 md:mt-0 h-[80vh]">
       <Header />
@@ -29,23 +42,24 @@ const Hero = () => {
               {subtitle}
             </p>
             <button
-              className="btn text-lg text-white font-semibold  bg-[#f06500] hover:bg-accent-primary_hover px-10 mb-8 xl:mb-0"
+              className="btn text-lg text-white font-semibold  bg-[#f06500] hover:bg-accent-primary_hover px-10 mb-8 xl:mb-0 cursor-pointer"
               data-aos="fade-down"
               data-aos-delay="600"
+              onClick={(e) => handleScroll(e, 'contact')}
             >
               {btnText}
             </button>
           </div>
           {/* image */}
           <div
-            className="relative p-14 md:hidden"
+            className="relative p-14 md:hidden -z-10"
             data-aos="fade-up"
             data-aos-delay="700"
           >
             <img src={image} alt="/" />
           </div>
           <div
-            className="relative hidden md:block"
+            className="relative hidden md:block -z-10"
             data-aos="fade-up"
             data-aos-delay="700"
           >

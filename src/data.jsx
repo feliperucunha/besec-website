@@ -52,7 +52,7 @@ import * as PiIcons from "react-icons/pi";
 export const heroData = {
   title: "Soluções em T.I.",
   subtitle:
-    "Impulsione o crescimento do seu negócio com nossas tecnologias inovadores e soluções personalizadas.",
+    "Impulsione o crescimento do seu negócio com nossas tecnologias inovadoras e soluções personalizadas.",
   btnText: "Fale Conosco",
   image: heroimage,
 };
@@ -91,6 +91,7 @@ export const featuresData = {
     {
       text: "Suporte TI",
       Icon: TfiIcons.TfiHeadphoneAlt,
+      // ADICIONE EM DOC O LINK DO SITE DO SERVIçO
       doc: "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
     },
     {
@@ -144,123 +145,48 @@ export const featuresData = {
 export const clientsData = [
   {
     image: Client1,
-    name: "Serena",
-    web: "rena.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "300",
   },
   {
     image: Client2,
-    name: "Natalia",
-    web: "natalia.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "600",
   },
   {
     image: Client3,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client4,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client5,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client6,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client7,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client8,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client9,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client10,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client11,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client12,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client13,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client14,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
   {
     image: Client15,
-    name: "Vebin",
-    web: "Vebin.com",
-    message:
-      "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
-    delay: "900",
   },
 ];
 
@@ -273,46 +199,45 @@ export const ctaData = {
 
 export const footerData = {
   logo: logo,
-  adress: "Product Texas, 234 Bokki Avence Street BPW 99388",
   email: "contato@besec.com.br",
   phone: "(41) 4042-1023",
   list1: [
     {
-      name: "Profile",
+      name: "Outras",
       href: "#",
     },
     {
-      name: "Features",
+      name: "Paginas",
       href: "features",
     },
     {
-      name: "Careers",
+      name: "Virao",
       href: "careers",
     },
     {
-      name: "DW News",
+      name: "Aqui",
       href: "dWNews",
     },
   ],
   list2: [
     {
-      name: "Support",
+      name: "Mais",
       href: "support",
     },
     {
-      name: "Sign Up",
+      name: "Paginas",
       href: "signUp",
     },
     {
-      name: "Guide",
+      name: "Virao",
       href: "guide",
     },
     {
-      name: "Reports",
+      name: "Aqui",
       href: "reports",
     },
     {
-      name: "Q & A",
+      name: "Tambem",
       href: "q",
     },
   ],
@@ -323,11 +248,7 @@ export const footerData = {
     },
     {
       icon: <FaInstagram />,
-      href: "#",
-    },
-    {
-      icon: <FaGithub />,
-      href: "#",
+      href: "https://www.instagram.com/besec.cwb?igsh=eGw5NHBxc2gxcXRp",
     },
   ],
 };
@@ -374,6 +295,14 @@ export const partnersData = {
 export const instagramData = {
   title: "PUBLICAÇÕES",
   subtitle: "Fique por dentro das novidades!",
+  publications: [
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+    'https://www.instagram.com/p/CUbHfhpswxt/',
+  ]
 };
 
 export const testimonials = {
